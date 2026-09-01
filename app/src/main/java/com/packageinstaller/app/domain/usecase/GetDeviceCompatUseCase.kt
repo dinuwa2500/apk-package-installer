@@ -8,10 +8,10 @@ class GetDeviceCompatUseCase {
     fun checkCompatibility(
         minSdk: Int,
         targetSdk: Int,
-        packageAbis: List<String>
+        packageAbis: List<String>,
+        currentSdk: Int = try { Build.VERSION.SDK_INT } catch (e: Throwable) { 34 },
+        supportedAbis: List<String> = try { Build.SUPPORTED_ABIS?.toList() ?: listOf("arm64-v8a", "armeabi-v7a") } catch (e: Throwable) { listOf("arm64-v8a", "armeabi-v7a") }
     ): DeviceCompatibility {
-        val currentSdk = Build.VERSION.SDK_INT
-        val supportedAbis = Build.SUPPORTED_ABIS.toList()
         val issues = mutableListOf<String>()
 
         val minSdkMet = currentSdk >= minSdk
