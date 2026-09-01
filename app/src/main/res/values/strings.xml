@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Package Installer</string>
+    <string name="app_description">Modern APK, XAPK, APKS and Split Package Installer</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_scanner">Scanner</string>
+    <string name="nav_browser">Browser</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Actions -->
+    <string name="action_install">Install Package</string>
+    <string name="action_scan">Scan Storage</string>
+    <string name="action_pick_file">Select Package File</string>
+    <string name="action_pick_folder">Select Split Folder</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_open_app">Open App</string>
+    <string name="action_done">Done</string>
+    <string name="action_grant_permission">Grant Permission</string>
+    <string name="action_settings">Open Settings</string>
+
+    <!-- Categories -->
+    <string name="cat_all">All Packages</string>
+    <string name="cat_apk">APK</string>
+    <string name="cat_xapk">XAPK</string>
+    <string name="cat_apks">APKS</string>
+    <string name="cat_splits">Split Sets</string>
+
+    <!-- Settings -->
+    <string name="setting_hidden_dirs">Show Hidden Directories</string>
+    <string name="setting_hidden_dirs_desc">Display folders beginning with \'.\' in file browser</string>
+    <string name="setting_storage_permission">Storage Access</string>
+    <string name="setting_storage_permission_desc">Manage external storage permission status</string>
+    <string name="setting_install_permission">Install Unknown Apps</string>
+    <string name="setting_install_permission_desc">Allow Package Installer to install applications</string>
+
+    <!-- Errors -->
+    <string name="err_invalid_apk">Invalid APK package structure or corrupted archive</string>
+    <string name="err_no_matching_abis">Device incompatible: No matching CPU architecture (ABI)</string>
+    <string name="err_missing_split">Missing required split component</string>
+    <string name="err_insufficient_storage">Insufficient storage available on device</string>
+    <string name="err_unknown_sources">Permission to install unknown packages is not granted</string>
+    <string name="err_older_sdk">The package requires a newer Android version</string>
+    <string name="err_signature_mismatch">Signature mismatch with existing installed version</string>
+    <string name="err_generic_failed">Installation failed</string>
+</resources>
